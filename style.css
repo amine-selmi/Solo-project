@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+  
+  }
+  body {
+    background: url('https://i.pinimg.com/originals/e7/51/65/e75165f7c69f871a7c86a139d12ae43c.gif') repeat fixed 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.nav {
+    margin-top: 10px;
+    margin-right: 50px !important;
+    width: 100%;
+    /* background: url('https://images.assetsdelivery.com/compings_v2/varunalight/varunalight1308/varunalight130800040.jpg'); */
+    background-color: rgba(116, 108, 108, 0.57);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px ;
+    border: 2px solid;
+    border-color: aliceblue;
+    z-index: 10;
+}
+
+.container > div {
+    margin: 10px;
+}
+.logo {
+    width: 15%;
+    
+}
+.nav-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-info > h4 {
+    margin: 10px;
+    color: white;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards {
+    width: 1000px !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around ;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb45RXyBgFTDFDTgIpanPc1Urp5wbotqNjLg&usqp=CAU'); */
+}
+.card {
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: 150px;
+    background: grey;
+    transition: transform .2s;
+}
+.btnPlay{
+    text-align: center;
+}
+input {
+    width: 30%;
+    height: 100%;
+}
+.card:hover {
+    transform: scale(1.1);
+}
