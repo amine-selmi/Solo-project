@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mermory Card Game</title>
 </head>
 <body>
+    
+    
         <div class="nav container"> 
             <div>
-                <img src="https://images-cdn.fantasyflightgames.com/filer_public/10/ea/10ea3364-041f-43a8-a1b6-78e3cdac27af/logo-lcg.png" 
+                <img src="../assets/MCG.png" 
                 class="logo">
             </div>
             <div class="nav-info container">
@@ -18,29 +21,32 @@
                 <h4>About</h4>
             </div>
         </div>
-        <div class="content">
+        <div class="container2">
+            <div class="timer"></div>
+        </div>
+        <div class="menu">
+            <h1>Pick A Match</h1>
+            <form>
+                <label for="name">Enter your name:</label>
+                <input class="player-name" name="name" type="text">
+                <input class="start-game" type="submit" value="Start Game">
+            </form>
+           
+        </div>
+        <div class="content hide">
             <div class="cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
             </div>
-            <div class="btnPlay">
-                <input type="button" value="Play">
-            </div>
+            <!-- <div class="btnPlay">
+                <input type="submit" value="Play">
+            </div> -->
     </div>
+    <div class="results">
+		<h1>You did it!</h1>
+		<p class="time"></p>
+		<h2>Fastest Times</h2>
+	</div>
+       
     
-    
+    <script src="main.js"></script>
 </body>
 </html>
